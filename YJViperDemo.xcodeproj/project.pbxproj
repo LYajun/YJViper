@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA22106521D086BC00D24AC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22106421D086BC00D24AC2 /* AppDelegate.m */; };
+		BA22106821D086BC00D24AC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22106721D086BC00D24AC2 /* ViewController.m */; };
+		BA22106B21D086BC00D24AC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA22106921D086BC00D24AC2 /* Main.storyboard */; };
+		BA22106D21D086BD00D24AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA22106C21D086BD00D24AC2 /* Assets.xcassets */; };
+		BA22107021D086BD00D24AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA22106E21D086BD00D24AC2 /* LaunchScreen.storyboard */; };
+		BA22107321D086BD00D24AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22107221D086BD00D24AC2 /* main.m */; };
+		BA22108B21D08DB300D24AC2 /* NSObject+YJViperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22108A21D08DB300D24AC2 /* NSObject+YJViperAssembly.m */; };
+		BA22109121D0A88D00D24AC2 /* UIViewController+YJViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109021D0A88D00D24AC2 /* UIViewController+YJViperRouter.m */; };
+		BA22109521D0ABD100D24AC2 /* YJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109421D0ABD100D24AC2 /* YJRouter.m */; };
+		BA22109821D0ACF100D24AC2 /* UIApplication+YJViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109721D0ACF100D24AC2 /* UIApplication+YJViperRouter.m */; };
+		BA22109C21D0AD8500D24AC2 /* YJRouter+YJEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109B21D0AD8500D24AC2 /* YJRouter+YJEditor.m */; };
+		BA22109F21D0AD9500D24AC2 /* YJRouter+YJLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109E21D0AD9500D24AC2 /* YJRouter+YJLogin.m */; };
+		BA2210AE21D0B15E00D24AC2 /* YJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210AD21D0B15E00D24AC2 /* YJLoginViewController.m */; };
+		BA2210B021D0B24500D24AC2 /* YJLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA2210AF21D0B24500D24AC2 /* YJLoginViewController.xib */; };
+		BA2210B321D0B5F200D24AC2 /* YJLoginBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210B221D0B5F200D24AC2 /* YJLoginBuilder.m */; };
+		BA2210BB21D0B9CB00D24AC2 /* YJNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210BA21D0B9CB00D24AC2 /* YJNoteModel.m */; };
+		BA2210C621D0BDE900D24AC2 /* YJNoteListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210C521D0BDE900D24AC2 /* YJNoteListInteractor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA22106021D086BC00D24AC2 /* YJViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA22106321D086BC00D24AC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA22106421D086BC00D24AC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA22106621D086BC00D24AC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA22106721D086BC00D24AC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA22106A21D086BC00D24AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA22106C21D086BD00D24AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA22106F21D086BD00D24AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA22107121D086BD00D24AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA22107221D086BD00D24AC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA22107D21D0886500D24AC2 /* YJViperPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperPresenter.h; sourceTree = "<group>"; };
+		BA22107E21D0886500D24AC2 /* YJViperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperView.h; sourceTree = "<group>"; };
+		BA22107F21D0886500D24AC2 /* YJViperViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperViewEventHandler.h; sourceTree = "<group>"; };
+		BA22108021D0888A00D24AC2 /* YJViper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViper.h; sourceTree = "<group>"; };
+		BA22108121D089E600D24AC2 /* YJViperInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperInteractor.h; sourceTree = "<group>"; };
+		BA22108221D08A5B00D24AC2 /* YJViperWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperWireframe.h; sourceTree = "<group>"; };
+		BA22108321D08AC500D24AC2 /* YJViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperRouter.h; sourceTree = "<group>"; };
+		BA22108521D08BC300D24AC2 /* YJViperViewPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperViewPrivate.h; sourceTree = "<group>"; };
+		BA22108621D08C2900D24AC2 /* YJViperPresenterPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperPresenterPrivate.h; sourceTree = "<group>"; };
+		BA22108721D08C3900D24AC2 /* YJViperInteractorPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperInteractorPrivate.h; sourceTree = "<group>"; };
+		BA22108821D08C4800D24AC2 /* YJViperWireframePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperWireframePrivate.h; sourceTree = "<group>"; };
+		BA22108921D08DB300D24AC2 /* NSObject+YJViperAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJViperAssembly.h"; sourceTree = "<group>"; };
+		BA22108A21D08DB300D24AC2 /* NSObject+YJViperAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJViperAssembly.m"; sourceTree = "<group>"; };
+		BA22108F21D0A88D00D24AC2 /* UIViewController+YJViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJViperRouter.h"; sourceTree = "<group>"; };
+		BA22109021D0A88D00D24AC2 /* UIViewController+YJViperRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJViperRouter.m"; sourceTree = "<group>"; };
+		BA22109321D0ABD100D24AC2 /* YJRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJRouter.h; sourceTree = "<group>"; };
+		BA22109421D0ABD100D24AC2 /* YJRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJRouter.m; sourceTree = "<group>"; };
+		BA22109621D0ACF100D24AC2 /* UIApplication+YJViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YJViperRouter.h"; sourceTree = "<group>"; };
+		BA22109721D0ACF100D24AC2 /* UIApplication+YJViperRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YJViperRouter.m"; sourceTree = "<group>"; };
+		BA22109A21D0AD8500D24AC2 /* YJRouter+YJEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YJRouter+YJEditor.h"; sourceTree = "<group>"; };
+		BA22109B21D0AD8500D24AC2 /* YJRouter+YJEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YJRouter+YJEditor.m"; sourceTree = "<group>"; };
+		BA22109D21D0AD9500D24AC2 /* YJRouter+YJLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YJRouter+YJLogin.h"; sourceTree = "<group>"; };
+		BA22109E21D0AD9500D24AC2 /* YJRouter+YJLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YJRouter+YJLogin.m"; sourceTree = "<group>"; };
+		BA2210A921D0B05800D24AC2 /* YJLoginViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLoginViewDelegate.h; sourceTree = "<group>"; };
+		BA2210AA21D0B08A00D24AC2 /* YJLoginViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLoginViewEventHandler.h; sourceTree = "<group>"; };
+		BA2210AB21D0B09A00D24AC2 /* YJLoginViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLoginViewProtocol.h; sourceTree = "<group>"; };
+		BA2210AC21D0B15E00D24AC2 /* YJLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLoginViewController.h; sourceTree = "<group>"; };
+		BA2210AD21D0B15E00D24AC2 /* YJLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJLoginViewController.m; sourceTree = "<group>"; };
+		BA2210AF21D0B24500D24AC2 /* YJLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJLoginViewController.xib; sourceTree = "<group>"; };
+		BA2210B121D0B5F200D24AC2 /* YJLoginBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLoginBuilder.h; sourceTree = "<group>"; };
+		BA2210B221D0B5F200D24AC2 /* YJLoginBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJLoginBuilder.m; sourceTree = "<group>"; };
+		BA2210B921D0B9CB00D24AC2 /* YJNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNoteModel.h; sourceTree = "<group>"; };
+		BA2210BA21D0B9CB00D24AC2 /* YJNoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNoteModel.m; sourceTree = "<group>"; };
+		BA2210C221D0BBB800D24AC2 /* YJNoteListInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNoteListInteractorInput.h; sourceTree = "<group>"; };
+		BA2210C321D0BD8D00D24AC2 /* YJNoteListDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNoteListDataService.h; sourceTree = "<group>"; };
+		BA2210C421D0BDE900D24AC2 /* YJNoteListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNoteListInteractor.h; sourceTree = "<group>"; };
+		BA2210C521D0BDE900D24AC2 /* YJNoteListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNoteListInteractor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA22105D21D086BC00D24AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA22105721D086BC00D24AC2 = {
+			isa = PBXGroup;
+			children = (
+				BA22107C21D0884E00D24AC2 /* YJViper */,
+				BA22106221D086BC00D24AC2 /* YJViperDemo */,
+				BA22106121D086BC00D24AC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA22106121D086BC00D24AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA22106021D086BC00D24AC2 /* YJViperDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA22106221D086BC00D24AC2 /* YJViperDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BA22106321D086BC00D24AC2 /* AppDelegate.h */,
+				BA22106421D086BC00D24AC2 /* AppDelegate.m */,
+				BA22106621D086BC00D24AC2 /* ViewController.h */,
+				BA22106721D086BC00D24AC2 /* ViewController.m */,
+				BA22106921D086BC00D24AC2 /* Main.storyboard */,
+				BA22106C21D086BD00D24AC2 /* Assets.xcassets */,
+				BA22106E21D086BD00D24AC2 /* LaunchScreen.storyboard */,
+				BA22107121D086BD00D24AC2 /* Info.plist */,
+				BA22107221D086BD00D24AC2 /* main.m */,
+				BA22109221D0AB5800D24AC2 /* Router */,
+				BA2210B821D0B9AD00D24AC2 /* NoteService */,
+				BA2210B721D0B9A500D24AC2 /* NoteModel */,
+				BA2210B621D0B99100D24AC2 /* EditorModule */,
+				BA2210B521D0B97A00D24AC2 /* NoteListModule */,
+				BA2210A021D0AF3200D24AC2 /* LoginModule */,
+			);
+			path = YJViperDemo;
+			sourceTree = "<group>";
+		};
+		BA22107C21D0884E00D24AC2 /* YJViper */ = {
+			isa = PBXGroup;
+			children = (
+				BA22108021D0888A00D24AC2 /* YJViper.h */,
+				BA22107F21D0886500D24AC2 /* YJViperViewEventHandler.h */,
+				BA22107E21D0886500D24AC2 /* YJViperView.h */,
+				BA22107D21D0886500D24AC2 /* YJViperPresenter.h */,
+				BA22108121D089E600D24AC2 /* YJViperInteractor.h */,
+				BA22108221D08A5B00D24AC2 /* YJViperWireframe.h */,
+				BA22108321D08AC500D24AC2 /* YJViperRouter.h */,
+				BA22108521D08BC300D24AC2 /* YJViperViewPrivate.h */,
+				BA22108621D08C2900D24AC2 /* YJViperPresenterPrivate.h */,
+				BA22108721D08C3900D24AC2 /* YJViperInteractorPrivate.h */,
+				BA22108821D08C4800D24AC2 /* YJViperWireframePrivate.h */,
+				BA22108921D08DB300D24AC2 /* NSObject+YJViperAssembly.h */,
+				BA22108A21D08DB300D24AC2 /* NSObject+YJViperAssembly.m */,
+				BA22108F21D0A88D00D24AC2 /* UIViewController+YJViperRouter.h */,
+				BA22109021D0A88D00D24AC2 /* UIViewController+YJViperRouter.m */,
+			);
+			path = YJViper;
+			sourceTree = "<group>";
+		};
+		BA22109221D0AB5800D24AC2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BA22109321D0ABD100D24AC2 /* YJRouter.h */,
+				BA22109421D0ABD100D24AC2 /* YJRouter.m */,
+				BA22109621D0ACF100D24AC2 /* UIApplication+YJViperRouter.h */,
+				BA22109721D0ACF100D24AC2 /* UIApplication+YJViperRouter.m */,
+				BA22109921D0AD2B00D24AC2 /* Adapter */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BA22109921D0AD2B00D24AC2 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				BA22109A21D0AD8500D24AC2 /* YJRouter+YJEditor.h */,
+				BA22109B21D0AD8500D24AC2 /* YJRouter+YJEditor.m */,
+				BA22109D21D0AD9500D24AC2 /* YJRouter+YJLogin.h */,
+				BA22109E21D0AD9500D24AC2 /* YJRouter+YJLogin.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		BA2210A021D0AF3200D24AC2 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210A821D0AFE800D24AC2 /* UserModel */,
+				BA2210A721D0AFDE00D24AC2 /* LoginService */,
+				BA2210A621D0AFCB00D24AC2 /* LoginViper */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		BA2210A121D0AF5D00D24AC2 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210B121D0B5F200D24AC2 /* YJLoginBuilder.h */,
+				BA2210B221D0B5F200D24AC2 /* YJLoginBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		BA2210A221D0AF6E00D24AC2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA2210A321D0AF8E00D24AC2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		BA2210A421D0AFAA00D24AC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA2210A521D0AFB300D24AC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210A921D0B05800D24AC2 /* YJLoginViewDelegate.h */,
+				BA2210AA21D0B08A00D24AC2 /* YJLoginViewEventHandler.h */,
+				BA2210AB21D0B09A00D24AC2 /* YJLoginViewProtocol.h */,
+				BA2210AC21D0B15E00D24AC2 /* YJLoginViewController.h */,
+				BA2210AD21D0B15E00D24AC2 /* YJLoginViewController.m */,
+				BA2210AF21D0B24500D24AC2 /* YJLoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA2210A621D0AFCB00D24AC2 /* LoginViper */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210A121D0AF5D00D24AC2 /* Builder */,
+				BA2210A521D0AFB300D24AC2 /* View */,
+				BA2210A421D0AFAA00D24AC2 /* Presenter */,
+				BA2210A321D0AF8E00D24AC2 /* Wireframe */,
+				BA2210A221D0AF6E00D24AC2 /* Interactor */,
+			);
+			path = LoginViper;
+			sourceTree = "<group>";
+		};
+		BA2210A721D0AFDE00D24AC2 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		BA2210A821D0AFE800D24AC2 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		BA2210B521D0B97A00D24AC2 /* NoteListModule */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210BC21D0BB0C00D24AC2 /* NoteListViper */,
+			);
+			path = NoteListModule;
+			sourceTree = "<group>";
+		};
+		BA2210B621D0B99100D24AC2 /* EditorModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditorModule;
+			sourceTree = "<group>";
+		};
+		BA2210B721D0B9A500D24AC2 /* NoteModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210B921D0B9CB00D24AC2 /* YJNoteModel.h */,
+				BA2210BA21D0B9CB00D24AC2 /* YJNoteModel.m */,
+			);
+			path = NoteModel;
+			sourceTree = "<group>";
+		};
+		BA2210B821D0B9AD00D24AC2 /* NoteService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NoteService;
+			sourceTree = "<group>";
+		};
+		BA2210BC21D0BB0C00D24AC2 /* NoteListViper */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210C021D0BB5D00D24AC2 /* Builder */,
+				BA2210BF21D0BB5D00D24AC2 /* Interactor */,
+				BA2210C121D0BB5D00D24AC2 /* Presenter */,
+				BA2210BD21D0BB5C00D24AC2 /* View */,
+				BA2210BE21D0BB5C00D24AC2 /* Wireframe */,
+			);
+			path = NoteListViper;
+			sourceTree = "<group>";
+		};
+		BA2210BD21D0BB5C00D24AC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA2210BE21D0BB5C00D24AC2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		BA2210BF21D0BB5D00D24AC2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BA2210C221D0BBB800D24AC2 /* YJNoteListInteractorInput.h */,
+				BA2210C321D0BD8D00D24AC2 /* YJNoteListDataService.h */,
+				BA2210C421D0BDE900D24AC2 /* YJNoteListInteractor.h */,
+				BA2210C521D0BDE900D24AC2 /* YJNoteListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA2210C021D0BB5D00D24AC2 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		BA2210C121D0BB5D00D24AC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA22105F21D086BC00D24AC2 /* YJViperDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA22107621D086BD00D24AC2 /* Build configuration list for PBXNativeTarget "YJViperDemo" */;
+			buildPhases = (
+				BA22105C21D086BC00D24AC2 /* Sources */,
+				BA22105D21D086BC00D24AC2 /* Frameworks */,
+				BA22105E21D086BC00D24AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJViperDemo;
+			productName = YJViperDemo;
+			productReference = BA22106021D086BC00D24AC2 /* YJViperDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA22105821D086BC00D24AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "刘亚军";
+				TargetAttributes = {
+					BA22105F21D086BC00D24AC2 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = BA22105B21D086BC00D24AC2 /* Build configuration list for PBXProject "YJViperDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA22105721D086BC00D24AC2;
+			productRefGroup = BA22106121D086BC00D24AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA22105F21D086BC00D24AC2 /* YJViperDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA22105E21D086BC00D24AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA22107021D086BD00D24AC2 /* LaunchScreen.storyboard in Resources */,
+				BA2210B021D0B24500D24AC2 /* YJLoginViewController.xib in Resources */,
+				BA22106D21D086BD00D24AC2 /* Assets.xcassets in Resources */,
+				BA22106B21D086BC00D24AC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA22105C21D086BC00D24AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA22109821D0ACF100D24AC2 /* UIApplication+YJViperRouter.m in Sources */,
+				BA22106821D086BC00D24AC2 /* ViewController.m in Sources */,
+				BA22109121D0A88D00D24AC2 /* UIViewController+YJViperRouter.m in Sources */,
+				BA2210AE21D0B15E00D24AC2 /* YJLoginViewController.m in Sources */,
+				BA2210C621D0BDE900D24AC2 /* YJNoteListInteractor.m in Sources */,
+				BA2210B321D0B5F200D24AC2 /* YJLoginBuilder.m in Sources */,
+				BA22108B21D08DB300D24AC2 /* NSObject+YJViperAssembly.m in Sources */,
+				BA22107321D086BD00D24AC2 /* main.m in Sources */,
+				BA22109F21D0AD9500D24AC2 /* YJRouter+YJLogin.m in Sources */,
+				BA22106521D086BC00D24AC2 /* AppDelegate.m in Sources */,
+				BA22109521D0ABD100D24AC2 /* YJRouter.m in Sources */,
+				BA2210BB21D0B9CB00D24AC2 /* YJNoteModel.m in Sources */,
+				BA22109C21D0AD8500D24AC2 /* YJRouter+YJEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA22106921D086BC00D24AC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA22106A21D086BC00D24AC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA22106E21D086BD00D24AC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA22106F21D086BD00D24AC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA22107421D086BD00D24AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA22107521D086BD00D24AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA22107721D086BD00D24AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z35S33J39R;
+				INFOPLIST_FILE = YJViperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancoo.YJViperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA22107821D086BD00D24AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z35S33J39R;
+				INFOPLIST_FILE = YJViperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancoo.YJViperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA22105B21D086BC00D24AC2 /* Build configuration list for PBXProject "YJViperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA22107421D086BD00D24AC2 /* Debug */,
+				BA22107521D086BD00D24AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA22107621D086BD00D24AC2 /* Build configuration list for PBXNativeTarget "YJViperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA22107721D086BD00D24AC2 /* Debug */,
+				BA22107821D086BD00D24AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA22105821D086BC00D24AC2 /* Project object */;
+}
