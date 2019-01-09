@@ -7,9 +7,9 @@
 //
 
 #import "YJViperWireframe.h"
+#import "YJViperView.h"
+#import "YJViperRouter.h"
 
-@protocol YJViperView;
-@protocol YJViperRouter;
 
 @protocol YJViperWireframePrivate <YJViperWireframe>
 

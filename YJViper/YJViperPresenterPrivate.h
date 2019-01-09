@@ -8,10 +8,10 @@
 
 
 #import "YJViperPresenter.h"
+#import "YJViperWireframe.h"
+#import "YJViperView.h"
+#import "YJViperInteractor.h"
 
-@protocol YJViperWireframe;
-@protocol YJViperView;
-@protocol YJViperInteractor;
 
 @protocol YJViperPresenterPrivate <YJViperPresenter>
 

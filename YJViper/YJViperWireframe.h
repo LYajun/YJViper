@@ -13,8 +13,8 @@
  
 */
 #import <Foundation/Foundation.h>
+#import "YJViperView.h"
 
-@protocol YJViperView;
 @protocol YJViperWireframe <NSObject>
 @property (nonatomic, readonly, weak) id<YJViperView> view;
 @end

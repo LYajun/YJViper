@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "YJViper"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Viper 架构"
 
   s.homepage     = "https://github.com/LYajun/YJViper"

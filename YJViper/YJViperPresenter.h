@@ -19,8 +19,9 @@
 
 
 #import "YJViperViewEventHandler.h"
+#import "YJViperView.h"
 
-@protocol YJViperView;
+
 @protocol YJViperPresenter <YJViperViewEventHandler>
 @property (nonatomic, readonly, weak) id<YJViperView> view;
 @end

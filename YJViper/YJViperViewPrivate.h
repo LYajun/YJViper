@@ -8,8 +8,8 @@
 
 
 #import "YJViperView.h"
+#import "YJViperViewEventHandler.h"
 
-@protocol YJViperViewEventHandler;
 @protocol YJViperViewPrivate <YJViperView>
 
 - (id<YJViperViewEventHandler>)eventHandler;

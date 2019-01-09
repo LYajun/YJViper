@@ -17,8 +17,8 @@
 
  */
 #import <UIKit/UIKit.h>
+#import "YJViperViewEventHandler.h"
 
-@protocol YJViperViewEventHandler;
 
 @protocol YJViperView <NSObject>
 

@@ -13,8 +13,6 @@
 		BA22106D21D086BD00D24AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA22106C21D086BD00D24AC2 /* Assets.xcassets */; };
 		BA22107021D086BD00D24AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA22106E21D086BD00D24AC2 /* LaunchScreen.storyboard */; };
 		BA22107321D086BD00D24AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22107221D086BD00D24AC2 /* main.m */; };
-		BA22108B21D08DB300D24AC2 /* NSObject+YJViperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22108A21D08DB300D24AC2 /* NSObject+YJViperAssembly.m */; };
-		BA22109121D0A88D00D24AC2 /* UIViewController+YJViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109021D0A88D00D24AC2 /* UIViewController+YJViperRouter.m */; };
 		BA22109521D0ABD100D24AC2 /* YJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109421D0ABD100D24AC2 /* YJRouter.m */; };
 		BA22109821D0ACF100D24AC2 /* UIApplication+YJViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109721D0ACF100D24AC2 /* UIApplication+YJViperRouter.m */; };
 		BA22109C21D0AD8500D24AC2 /* YJRouter+YJEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22109B21D0AD8500D24AC2 /* YJRouter+YJEditor.m */; };
@@ -24,6 +22,8 @@
 		BA2210B321D0B5F200D24AC2 /* YJLoginBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210B221D0B5F200D24AC2 /* YJLoginBuilder.m */; };
 		BA2210BB21D0B9CB00D24AC2 /* YJNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210BA21D0B9CB00D24AC2 /* YJNoteModel.m */; };
 		BA2210C621D0BDE900D24AC2 /* YJNoteListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2210C521D0BDE900D24AC2 /* YJNoteListInteractor.m */; };
+		BA4FCAE921E57BF9007A21BB /* UIViewController+YJViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FCADE21E57BF7007A21BB /* UIViewController+YJViperRouter.m */; };
+		BA4FCAEA21E57BF9007A21BB /* NSObject+YJViperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FCAE021E57BF8007A21BB /* NSObject+YJViperAssembly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,21 +37,6 @@
 		BA22106F21D086BD00D24AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA22107121D086BD00D24AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA22107221D086BD00D24AC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA22107D21D0886500D24AC2 /* YJViperPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperPresenter.h; sourceTree = "<group>"; };
-		BA22107E21D0886500D24AC2 /* YJViperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperView.h; sourceTree = "<group>"; };
-		BA22107F21D0886500D24AC2 /* YJViperViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperViewEventHandler.h; sourceTree = "<group>"; };
-		BA22108021D0888A00D24AC2 /* YJViper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViper.h; sourceTree = "<group>"; };
-		BA22108121D089E600D24AC2 /* YJViperInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperInteractor.h; sourceTree = "<group>"; };
-		BA22108221D08A5B00D24AC2 /* YJViperWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperWireframe.h; sourceTree = "<group>"; };
-		BA22108321D08AC500D24AC2 /* YJViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperRouter.h; sourceTree = "<group>"; };
-		BA22108521D08BC300D24AC2 /* YJViperViewPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperViewPrivate.h; sourceTree = "<group>"; };
-		BA22108621D08C2900D24AC2 /* YJViperPresenterPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperPresenterPrivate.h; sourceTree = "<group>"; };
-		BA22108721D08C3900D24AC2 /* YJViperInteractorPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperInteractorPrivate.h; sourceTree = "<group>"; };
-		BA22108821D08C4800D24AC2 /* YJViperWireframePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViperWireframePrivate.h; sourceTree = "<group>"; };
-		BA22108921D08DB300D24AC2 /* NSObject+YJViperAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJViperAssembly.h"; sourceTree = "<group>"; };
-		BA22108A21D08DB300D24AC2 /* NSObject+YJViperAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJViperAssembly.m"; sourceTree = "<group>"; };
-		BA22108F21D0A88D00D24AC2 /* UIViewController+YJViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJViperRouter.h"; sourceTree = "<group>"; };
-		BA22109021D0A88D00D24AC2 /* UIViewController+YJViperRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJViperRouter.m"; sourceTree = "<group>"; };
 		BA22109321D0ABD100D24AC2 /* YJRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJRouter.h; sourceTree = "<group>"; };
 		BA22109421D0ABD100D24AC2 /* YJRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJRouter.m; sourceTree = "<group>"; };
 		BA22109621D0ACF100D24AC2 /* UIApplication+YJViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YJViperRouter.h"; sourceTree = "<group>"; };
@@ -74,6 +59,21 @@
 		BA2210C321D0BD8D00D24AC2 /* YJNoteListDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNoteListDataService.h; sourceTree = "<group>"; };
 		BA2210C421D0BDE900D24AC2 /* YJNoteListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNoteListInteractor.h; sourceTree = "<group>"; };
 		BA2210C521D0BDE900D24AC2 /* YJNoteListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNoteListInteractor.m; sourceTree = "<group>"; };
+		BA4FCADA21E57BF6007A21BB /* YJViperInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperInteractor.h; sourceTree = "<group>"; };
+		BA4FCADB21E57BF7007A21BB /* YJViperPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperPresenter.h; sourceTree = "<group>"; };
+		BA4FCADC21E57BF7007A21BB /* YJViperPresenterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperPresenterPrivate.h; sourceTree = "<group>"; };
+		BA4FCADD21E57BF7007A21BB /* UIViewController+YJViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJViperRouter.h"; sourceTree = "<group>"; };
+		BA4FCADE21E57BF7007A21BB /* UIViewController+YJViperRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJViperRouter.m"; sourceTree = "<group>"; };
+		BA4FCADF21E57BF8007A21BB /* YJViperWireframePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperWireframePrivate.h; sourceTree = "<group>"; };
+		BA4FCAE021E57BF8007A21BB /* NSObject+YJViperAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJViperAssembly.m"; sourceTree = "<group>"; };
+		BA4FCAE121E57BF8007A21BB /* YJViperWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperWireframe.h; sourceTree = "<group>"; };
+		BA4FCAE221E57BF8007A21BB /* YJViperViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperViewEventHandler.h; sourceTree = "<group>"; };
+		BA4FCAE321E57BF8007A21BB /* YJViperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperView.h; sourceTree = "<group>"; };
+		BA4FCAE421E57BF8007A21BB /* YJViperInteractorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperInteractorPrivate.h; sourceTree = "<group>"; };
+		BA4FCAE521E57BF8007A21BB /* YJViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperRouter.h; sourceTree = "<group>"; };
+		BA4FCAE621E57BF9007A21BB /* NSObject+YJViperAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJViperAssembly.h"; sourceTree = "<group>"; };
+		BA4FCAE721E57BF9007A21BB /* YJViperViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViperViewPrivate.h; sourceTree = "<group>"; };
+		BA4FCAE821E57BF9007A21BB /* YJViper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,21 +129,21 @@
 		BA22107C21D0884E00D24AC2 /* YJViper */ = {
 			isa = PBXGroup;
 			children = (
-				BA22108021D0888A00D24AC2 /* YJViper.h */,
-				BA22107F21D0886500D24AC2 /* YJViperViewEventHandler.h */,
-				BA22107E21D0886500D24AC2 /* YJViperView.h */,
-				BA22107D21D0886500D24AC2 /* YJViperPresenter.h */,
-				BA22108121D089E600D24AC2 /* YJViperInteractor.h */,
-				BA22108221D08A5B00D24AC2 /* YJViperWireframe.h */,
-				BA22108321D08AC500D24AC2 /* YJViperRouter.h */,
-				BA22108521D08BC300D24AC2 /* YJViperViewPrivate.h */,
-				BA22108621D08C2900D24AC2 /* YJViperPresenterPrivate.h */,
-				BA22108721D08C3900D24AC2 /* YJViperInteractorPrivate.h */,
-				BA22108821D08C4800D24AC2 /* YJViperWireframePrivate.h */,
-				BA22108921D08DB300D24AC2 /* NSObject+YJViperAssembly.h */,
-				BA22108A21D08DB300D24AC2 /* NSObject+YJViperAssembly.m */,
-				BA22108F21D0A88D00D24AC2 /* UIViewController+YJViperRouter.h */,
-				BA22109021D0A88D00D24AC2 /* UIViewController+YJViperRouter.m */,
+				BA4FCAE621E57BF9007A21BB /* NSObject+YJViperAssembly.h */,
+				BA4FCAE021E57BF8007A21BB /* NSObject+YJViperAssembly.m */,
+				BA4FCADD21E57BF7007A21BB /* UIViewController+YJViperRouter.h */,
+				BA4FCADE21E57BF7007A21BB /* UIViewController+YJViperRouter.m */,
+				BA4FCAE821E57BF9007A21BB /* YJViper.h */,
+				BA4FCADA21E57BF6007A21BB /* YJViperInteractor.h */,
+				BA4FCAE421E57BF8007A21BB /* YJViperInteractorPrivate.h */,
+				BA4FCADB21E57BF7007A21BB /* YJViperPresenter.h */,
+				BA4FCADC21E57BF7007A21BB /* YJViperPresenterPrivate.h */,
+				BA4FCAE521E57BF8007A21BB /* YJViperRouter.h */,
+				BA4FCAE321E57BF8007A21BB /* YJViperView.h */,
+				BA4FCAE221E57BF8007A21BB /* YJViperViewEventHandler.h */,
+				BA4FCAE721E57BF9007A21BB /* YJViperViewPrivate.h */,
+				BA4FCAE121E57BF8007A21BB /* YJViperWireframe.h */,
+				BA4FCADF21E57BF8007A21BB /* YJViperWireframePrivate.h */,
 			);
 			path = YJViper;
 			sourceTree = "<group>";
@@ -403,13 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4FCAEA21E57BF9007A21BB /* NSObject+YJViperAssembly.m in Sources */,
 				BA22109821D0ACF100D24AC2 /* UIApplication+YJViperRouter.m in Sources */,
 				BA22106821D086BC00D24AC2 /* ViewController.m in Sources */,
-				BA22109121D0A88D00D24AC2 /* UIViewController+YJViperRouter.m in Sources */,
+				BA4FCAE921E57BF9007A21BB /* UIViewController+YJViperRouter.m in Sources */,
 				BA2210AE21D0B15E00D24AC2 /* YJLoginViewController.m in Sources */,
 				BA2210C621D0BDE900D24AC2 /* YJNoteListInteractor.m in Sources */,
 				BA2210B321D0B5F200D24AC2 /* YJLoginBuilder.m in Sources */,
-				BA22108B21D08DB300D24AC2 /* NSObject+YJViperAssembly.m in Sources */,
 				BA22107321D086BD00D24AC2 /* main.m in Sources */,
 				BA22109F21D0AD9500D24AC2 /* YJRouter+YJLogin.m in Sources */,
 				BA22106521D086BC00D24AC2 /* AppDelegate.m in Sources */,
